@@ -43,6 +43,7 @@ def decode(string):
 			for i in newstring:
 				decode_stream+='0'*(6-len(f"{decode_dict[i]:b}"))+f"{decode_dict[i]:b}"
 			decode_l = []
+			decode_stream = '0'*8 + decode_stream
 			for i in range(0,int(len(decode_stream)/8)):
 				decode_l.append(chr(int(decode_stream[i*8:8*(i+1):1],2)))
 			print('\nThe decoded string is:-\n\n{}'.format(''.join(decode_l[1:])))
@@ -51,6 +52,7 @@ def decode(string):
 			for i in newstring:
 				decode_stream+='0'*(6-len(f"{decode_dict[i]:b}"))+f"{decode_dict[i]:b}"
 			decode_l = []
+			decode_stream = '0'*16 + decode_stream
 			for i in range(0,int(len(decode_stream)/8)):
 				decode_l.append(chr(int(decode_stream[i*8:8*(i+1):1],2)))
 			print('\nThe decoded string is:-\n\n{}'.format(''.join(decode_l[2:])))

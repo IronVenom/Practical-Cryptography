@@ -5,7 +5,7 @@ Encryption and Decryption Algorithms for various ciphers in Python:
 
 * Base64 ( with singular and double padding. )
 
-### Substitution Ciphers
+#### Substitution Ciphers
 
 * Caesar Cipher
 * ROT13 Cipher

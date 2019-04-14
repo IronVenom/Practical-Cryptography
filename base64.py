@@ -1,3 +1,5 @@
+# Base64 Encoding and Decoding.
+
 # Dictionaries for base64 encoding and decoding.
 
 encode_dict = {0:'A',1:'B',2:'C',3:'D',4:'E',5:'F',6:'G',7:'H',8:'I',9:'J',10:'K',11:'L',12:'M',13:'N',14:'O',15:'P',16:'Q',17:'R',18:'S',19:'T',20:'U',21:'V',22:'W',
@@ -27,7 +29,7 @@ def encode(string):
 	encoded_string = ''
 	for i in encode_bin:
 		encoded_string+=encode_dict[int(i,2)]
-	print('\nThe encoded string is\n{}'.format(encoded_string+'='*extra))
+	print('\nThe encoded string is:-\n\n{}\n'.format(encoded_string+'='*extra))
 	
 #Decoding
 
@@ -43,7 +45,7 @@ def decode(string):
 			decode_l = []
 			for i in range(0,int(len(decode_stream)/8)):
 				decode_l.append(chr(int(decode_stream[i*8:8*(i+1):1],2)))
-			print('\nThe decoded string is\n{}'.format(''.join(decode_l[1:])))
+			print('\nThe decoded string is:-\n\n{}'.format(''.join(decode_l[1:])))
 		else:
 			newstring = string[:-1]
 			for i in newstring:
@@ -51,24 +53,24 @@ def decode(string):
 			decode_l = []
 			for i in range(0,int(len(decode_stream)/8)):
 				decode_l.append(chr(int(decode_stream[i*8:8*(i+1):1],2)))
-			print('\nThe decoded string is\n{}'.format(''.join(decode_l[2:])))
+			print('\nThe decoded string is:-\n\n{}'.format(''.join(decode_l[2:])))
 	else:
 		for i in string:
 			decode_stream+='0'*(6-len(f"{decode_dict[i]:b}"))+f"{decode_dict[i]:b}"
 		decode_l = []
 		for i in range(0,int(len(decode_stream)/8)):
 			decode_l.append(chr(int(decode_stream[i*8:8*(i+1):1],2)))
-		print('\nThe decoded string is\n{}'.format(''.join(decode_l)))
+		print('\nThe decoded string is:-\n\n{}\n'.format(''.join(decode_l)))
 
 
 # Driver Code
 
-query = input('\nEnter encode for encoding and decode for decoding.\n')
+query = input('\nEnter encode for encoding and decode for decoding.\n\n')
 if query == 'encode':
-	string = input('\nEnter the string.\n')
+	string = input('\nEnter the string.\n\n')
 	encode(string)
 elif query == 'decode':
-	string = input('\nEnter the string.\n')
+	string = input('\nEnter the string.\n\n')
 	decode(string)
 else:
 	print('Please try again.')

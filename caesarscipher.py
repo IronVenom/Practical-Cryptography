@@ -1,4 +1,4 @@
-# Caesar's Cipher Encoding and Decoding.
+# Caesar's Cipher Encoding and Decoding. Note that this is right shift encoding and decoding.
 
 # Encoding 
 

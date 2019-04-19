@@ -72,9 +72,10 @@ for i in sum_global:
 	fitness_table.add_row(i)
 
 print(fitness_table)
-print('\nThe Required key for decoding is {}.\n'.format(top_key))
 
 # Printing out the decoded cipher :
+
+print('\nThe Required key for decoding is {}.\n'.format(top_key))
 
 decoded_string = ''
 
@@ -94,9 +95,3 @@ for i in string:
 		decoded_string+=i
 
 print('The decoded string is:- \n\n{}\n'.format(decoded_string))
-
-
-			
-		
-
-

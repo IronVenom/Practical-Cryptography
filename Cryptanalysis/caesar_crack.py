@@ -11,7 +11,7 @@ quads = file.readlines()
 quads = [i.split(' ') for i in quads]
 quads = {i[0]:int(i[1].split('\n')[0]) for i in quads}
 
-string = input('\nEnter right shifted Caesar cipher encoded string for cracking.\n')
+string = input('\nEnter right shifted Caesar cipher encoded string for cracking.\n\n')
 
 keys = [i for i in range(1,26)]
 

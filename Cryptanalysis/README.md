@@ -2,7 +2,7 @@
 
 This involves cracking encoded ciphers using various methods.
 
-* Caesar analysis : 
+* Caesar Cipher Cracking : 
 
 This code takes into consideration quadgram analysis of the encoded text, calculates the fitness of all possible strings
 and gives us the best possible decoded string.

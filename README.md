@@ -1,5 +1,6 @@
 ## Practical-Cryptography
-Encryption and Decryption Algorithms for various ciphers in Python:
+
+### Encryption and Decryption Algorithms for various ciphers in Python:
 
 #### Encoding Schemes
 
@@ -12,7 +13,7 @@ Encryption and Decryption Algorithms for various ciphers in Python:
 * Atbash Cipher
 * Baconian Cipher
 
-#### Cryptanalysis
+### Cracking Ciphers: Cryptanalysis
 
 * Caesar Cipher
 

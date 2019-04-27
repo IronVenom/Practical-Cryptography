@@ -10,6 +10,7 @@ Encryption and Decryption Algorithms for various ciphers in Python:
 * Caesar Cipher
 * ROT13 Cipher
 * Atbash Cipher
+* Baconian Cipher
 
 #### Cryptanalysis
 

@@ -8,6 +8,7 @@
 
 #### Substitution Ciphers
 
+* Simple Substitution Cipher
 * Caesar Cipher
 * ROT13 Cipher
 * Atbash Cipher
